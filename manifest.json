@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Web Text Editer",
+  "short_name": "WebText Edit",
+  "description": "This extension makes the text of a web page editable on the fly.",
+  "version": "1.0",
+  "version_name": "1.0 stable version",
+  "minimum_chrome_version": "50",
+  "offline_enabled": true,
+  "icons": {
+    "16": "icons/pen16.png",
+    "48": "icons/pen48.png",
+    "128": "icons/pen128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "toggle-design-mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Toggle edit mode"
+    }
+  },
+  "browser_action": {
+    "default_title": "Web Page Editable",
+    "default_icon": {
+      "19": "icons/pen19.png",
+      "38": "icons/pen38.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "file:///*"
+  ]
+}
