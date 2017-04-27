@@ -15,15 +15,6 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "commands": {
-    "toggle-design-mode": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+E",
-        "mac": "Command+Shift+E"
-      },
-      "description": "Toggle edit mode"
-    }
-  },
   "browser_action": {
     "default_title": "Web Page Editable",
     "default_icon": {

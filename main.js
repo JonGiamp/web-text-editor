@@ -1,3 +1,4 @@
-{
-  document.designMode = (document.designMode === "on") ? "off" : "on";
-}
+(() => {
+  document.designMode = (document.designMode === 'on') ? 'off' : 'on';
+  return true;
+})();
