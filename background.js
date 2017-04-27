@@ -2,7 +2,7 @@ let toggle = false;
 
 const changeIcons = (id, fileName = '') => {
   chrome.browserAction.setIcon({
-    path: `icons/pen16${fileName}.png`,
+    path: `icons/icons16${fileName}.png`,
     tabId: id,
   });
 };
