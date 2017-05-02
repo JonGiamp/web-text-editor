@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This extension makes the text of a web page editable on the fly.",
   "main": "background.js",
-  "repository": "https://github.com/JonGiamp/web-text-editer.git",
+  "repository": "https://github.com/JonGiamp/Chrome-extension__Web-Text-Editer.git",
   "author": "JonGiamp <jonathan.giamporcaro@gmail.com>",
   "license": "MIT",
   "scripts": {
