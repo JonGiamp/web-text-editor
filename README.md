@@ -1,4 +1,4 @@
-## Web Text Editer
+## Web Text Editor
 
 This extension allows you to edit the text of a web page on the fly.
 

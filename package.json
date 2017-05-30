@@ -1,5 +1,5 @@
 {
-  "name": "Web-Text-Editer",
+  "name": "Web-Text-Editor",
   "version": "1.0.0",
   "description": "This extension makes the text of a web page editable on the fly.",
   "main": "background.js",

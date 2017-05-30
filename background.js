@@ -1,4 +1,4 @@
-let toggle = false;
+let isEnable = false;
 
 const changeIcons = (id, fileName = '') => {
   chrome.browserAction.setIcon({
@@ -8,12 +8,12 @@ const changeIcons = (id, fileName = '') => {
 };
 
 const toggleEditMode = (id) => {
-  toggle = !toggle;
-  if (toggle) changeIcons(id, '_enable');
-  else changeIcons(id);
   chrome.tabs.executeScript(id, { file: 'main.js' });
+  isEnable = !isEnable;
+  return isEnable;
 };
 
 chrome.browserAction.onClicked.addListener(({ id }) => {
-  toggleEditMode(id);
+  const fileName = toggleEditMode(id) ? '_enable' : '';
+  changeIcons(id, fileName);
 });
